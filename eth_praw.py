@@ -26,7 +26,7 @@ for comment in daily_alt.comments.list():
     comment_text.append(comment.body)
     time = datetime.datetime.fromtimestamp(
         int(comment.created_utc)
-        ).strftime('%Y-%m-%d %H:%M:%S')
+        ).strftime('%Y-%m-%d')
     created_time.append(time)
 
 # bind lists together to data frame
